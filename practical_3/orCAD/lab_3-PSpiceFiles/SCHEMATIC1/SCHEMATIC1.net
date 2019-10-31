@@ -1,0 +1,16 @@
+* source LAB_3
+Q_Q1         N00263 N00267 N00259 Q2N2222
+Q_Q2         N00251 N00263 N00255 Q2N2222
+C_CE         0 N00259  100n  TC=0,0 
+C_CC         N00267 N00387  100n  TC=0,0 
+C_CF         N00255 N00479  100n  TC=0,0 
+R_RF         N00267 N00479  1.2k TC=0,0 
+R_RE2         0 N00255  8.1k TC=0,0 
+R_RE1         0 N00259  1k TC=0,0 
+R_R2         0 N00267  13.5k TC=0,0 
+R_R1         N00267 N00423  38.3k TC=0,0 
+R_RC1         N00263 N00423  3k TC=0,0 
+R_RC2         N00251 N00423  4k TC=0,0 
+R_RS         IN N00387  0.6k TC=0,0 
+V_V2         N00423 0 10Vdc
+V_V3         IN 0 DC 0Vdc AC 1Vac 

@@ -1,0 +1,7 @@
+* source PROJECT_CURRENT_MIRROR
+M_M2         N00148 N00148 N00152 N00152 Mbreakn           
+R_R         N00179 N00183  80k TC=0,0 
+V_VDD         N00183 0 10Vdc
+V_-VDD         N00152 0 -10Vdc
+M_M1         N00183 N00183 N00148 N00148 Mbreakn           
+M_M3         N00179 N00148 N00152 N00152 Mbreakn           

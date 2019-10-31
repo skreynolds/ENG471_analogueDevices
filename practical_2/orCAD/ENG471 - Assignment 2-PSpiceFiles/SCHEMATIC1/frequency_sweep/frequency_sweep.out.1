@@ -1,0 +1,53 @@
+
+**** 05/11/16 22:40:32 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-frequency_sweep"  [ c:\users\shane reynolds\google drive\orcad\eng471 - assignment 2\eng471 - assignment 2-p
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "frequency_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../eng471 - assignment 2-pspicefiles/eng471 - assignment 2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Shane Reynolds\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 1e10
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ENG471 - ASSIGNMENT 2
+V_V3         N00245 0 10Vdc
+V_V4         V2IN 0 -10Vdc
+C_C1         N00223 VOUT  1n  TC=0,0 
+R_R1         0 VOUT  10e6 TC=0,0 
+M_M1         N00245 N00245 N00313 N04578 Mbreakn5           
+M_M2         N00313 N00313 N00309 N04705 Mbreakn5           
+M_M3         N00309 N00309 V2IN V2IN Mbreakn7           
+M_M4         N05006 N00309 V2IN V2IN Mbreakn7           
+M_M5         N00219 V2IN N05006 V2IN Mbreakn_3           
+M_M6         N00223 V2IN N05006 V2IN Mbreakn_3           
+M_M7         N00245 N00219 N00223 N00245 Mbreakp1           
+M_M8         N00245 N00219 N00219 N00245 Mbreakp1           
+V_V8         V2IN 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING frequency_sweep.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V8. You may break the loop by adding a series resistance
+

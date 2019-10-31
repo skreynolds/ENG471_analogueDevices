@@ -1,0 +1,4 @@
+* PSpice Model Editor - Version 16.6.0
+*$
+.model Mbreakn NMOS VTO=2 KP=40u L=5u W=0.5859u
+*$

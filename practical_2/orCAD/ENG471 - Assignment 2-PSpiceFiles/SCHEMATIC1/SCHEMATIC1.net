@@ -1,0 +1,14 @@
+* source ENG471 - ASSIGNMENT 2
+V_V3         N00245 0 10Vdc
+V_V4         N00294 0 -10Vdc
+C_C1         N00223 VOUT  1n  TC=0,0 
+R_R1         0 VOUT  400e3 TC=0,0 
+M_M1         N00245 N00245 N00313 N04578 Mbreakn5           
+M_M2         N00313 N00313 N00309 N04705 Mbreakn5           
+M_M3         N00309 N00309 N00294 N00294 Mbreakn7           
+M_M4         N05006 N00309 N00294 N00294 Mbreakn7           
+M_M5         N00219 V1IN N05006 N00294 Mbreakn_3           
+M_M6         N00223 V1IN N05006 N00294 Mbreakn_3           
+M_M7         N00245 N00219 N00223 N00245 Mbreakp1           
+M_M8         N00245 N00219 N00219 N00245 Mbreakp1           
+V_V8         V1IN 0 DC 0Vdc AC 1Vac 

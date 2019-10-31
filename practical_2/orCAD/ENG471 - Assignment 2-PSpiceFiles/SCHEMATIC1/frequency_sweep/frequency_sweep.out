@@ -1,0 +1,147 @@
+
+**** 05/19/16 19:25:21 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-frequency_sweep"  [ c:\users\shane reynolds\google drive\orcad\eng471 - assignment 2\eng471 - assignment 2-p
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "frequency_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../eng471 - assignment 2-pspicefiles/eng471 - assignment 2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Shane Reynolds\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 1e10
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ENG471 - ASSIGNMENT 2
+V_V3         N00245 0 10Vdc
+V_V4         N00294 0 -10Vdc
+C_C1         N00223 VOUT  1n  TC=0,0 
+R_R1         0 VOUT  400e3 TC=0,0 
+M_M1         N00245 N00245 N00313 N04578 Mbreakn5           
+M_M2         N00313 N00313 N00309 N04705 Mbreakn5           
+M_M3         N00309 N00309 N00294 N00294 Mbreakn7           
+M_M4         N05006 N00309 N00294 N00294 Mbreakn7           
+M_M5         N00219 V1IN N05006 N00294 Mbreakn_3           
+M_M6         N00223 V1IN N05006 N00294 Mbreakn_3           
+M_M7         N00245 N00219 N00223 N00245 Mbreakp1           
+M_M8         N00245 N00219 N00219 N00245 Mbreakp1           
+V_V8         V1IN 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING frequency_sweep.cir ****
+.END
+
+**** 05/19/16 19:25:21 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-frequency_sweep"  [ c:\users\shane reynolds\google drive\orcad\eng471 - assignment 2\eng471 - assignment 2-p
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn5        Mbreakn7        Mbreakn_3       Mbreakp1        
+               NMOS            NMOS            NMOS            PMOS            
+       LEVEL    1               1               1               1            
+           L    1.000000E-06    1.000000E-06    1.000000E-06    1.000000E-06 
+           W    1.000000E-06    1.000000E-06    1.000000E-06    1.000000E-06 
+         VTO    2               2               2              -2            
+          KP   50.000000E-06  200.000000E-06  100.000000E-06  100.000000E-06 
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA     .01             .01             .01             .01         
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX    0               0               0               0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+**** 05/19/16 19:25:21 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-frequency_sweep"  [ c:\users\shane reynolds\google drive\orcad\eng471 - assignment 2\eng471 - assignment 2-p
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( V1IN)    0.0000  ( VOUT)    0.0000  (N00219)    5.1655 (N00223)    5.1655     
+
+(N00245)   10.0000 (N00294)  -10.0000 (N00309)   -5.1708 (N00313)    2.4146     
+
+(N04578)    2.5850 (N04705)   -5.0004 (N05006)   -4.7680 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.681E-03
+    V_V4         1.681E-03
+    V_V8         0.000E+00
+
+    TOTAL POWER DISSIPATION   3.36E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/19/16 19:25:21 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-frequency_sweep"  [ c:\users\shane reynolds\google drive\orcad\eng471 - assignment 2\eng471 - assignment 2-p
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

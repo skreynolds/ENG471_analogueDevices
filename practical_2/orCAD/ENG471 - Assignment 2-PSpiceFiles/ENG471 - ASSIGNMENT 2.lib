@@ -1,0 +1,23 @@
+* PSpice Model Editor - Version 16.6.0
+*$
+.model Mbreakp_1 PMOS
++ VTO=-2 KP=100u LAMBDA=0.01 L=1e-6 W=1e-6
+*$
+.model Mbreakn_3 NMOS
++ VTO=2 KP=100u LAMBDA=0.01 L=1e-6 W=1e-6
+*$
+.model Mbreakp1 PMOS
++ VTO=-2 KP=100u W=1e-6 L=1e-6 LAMBDA=0.01
+*$
+.model Mbreakn1 NMOS
++ VTO=2 KP=100u W=1e-6 L=1e-6 LAMBDA=0.01
+*$
+.model Mbreakn7 NMOS
++ VTO=2 KP=200u W=1e-6 L=1e-6 LAMBDA=0.01
+*$
+.model Mbreakn6 NMOS
++ VTO=2 KP=50u W=1e-6 L=1e-6 LAMBDA=0.01
+*$
+.model Mbreakn5 NMOS
++ VTO=2 KP=50u W=1e-6 L=1e-6 LAMBDA=0.01
+*$

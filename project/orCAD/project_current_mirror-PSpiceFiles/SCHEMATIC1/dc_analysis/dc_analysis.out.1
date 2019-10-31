@@ -1,0 +1,158 @@
+
+**** 05/30/17 21:05:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dc_analysis"  [ C:\USERS\SHANE REYNOLDS\DOCUMENTS\ENG471_ANALOGDEVICES\project\project_current_mirror-PSpice
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../project_current_mirror-pspicefiles/project_current_mirror.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Shane Reynolds\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT_CURRENT_MIRROR
+M_M1         N00148 N00183 N00183 N00183 Mbreakn           
+M_M2         N00152 N00148 N00148 N00148 MbreakN           
+M_M3         N00179 N00148 N00152 N00152 MbreakN           
+R_R         N00179 N00183  200k TC=0,0 
+V_VDD         N00183 0 10Vdc
+V_-VDD         N00152 0 -10Vdc
+
+**** RESUMING dc_analysis.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file "C:\USERS\SHANE REYNOLDS\DOCUMENTS\ENG471_ANALOGDEVICES\project\project_current_mirror-pspicefiles\project_current_mirror.lib" has changed since index file project_current_mirror.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Tue May 30 20:53:58 2017 to Tue May 30 21:05:50 2017.
+
+INFO(ORPSIM-15422): Making new index file project_current_mirror.ind for library file project_current_mirror.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 05/30/17 21:05:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dc_analysis"  [ C:\USERS\SHANE REYNOLDS\DOCUMENTS\ENG471_ANALOGDEVICES\project\project_current_mirror-PSpice
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    0            
+          KP   20.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+Starting pseudo-transient algorithm.
+
+INTERNAL ERROR -- Divide by Zero, Divide
+
+ABORTING SIMULATION
+**** 05/30/17 21:05:59 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dc_analysis"  [ C:\USERS\SHANE REYNOLDS\DOCUMENTS\ENG471_ANALOGDEVICES\project\project_current_mirror-PSpice
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           5
+  External (NCNODS)                 =           5
+  Total (NUMNOD)                    =           5
+
+Total device count (NUMEL)          =           6
+  MosFETs (M)                       =           3
+  Resistors (R)                     =           1
+  Voltage Sources (V)               =           2
+
+Number of subcircuits (X)           =           0
+
+Matrix statistics:
+  Matrix size (NSTOP)               =           7
+  Initial no. elements (NTTAR)      =          18
+  No. elements w/ fillin (NTTBR)    =          18
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =          82
+  No. LU operations (IOPS)          =          16
+  Percent sparsity (PERSPA)         =      63.265
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =          98
+  No. rejected time points (NUMRTP) =          35
+  No. iterations (NUMNIT)           =         555
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations   Stopped At
+  Matrix load                       =         .02
+  Matrix solution                   =        0.00              21
+  Readin                            =        0.00
+  General setup                     =         .02
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  Default algorithm                 =        -.02           -1050
+  GMIN stepping                     =         .02            1050     100.00m
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        0.00
+  Total job time (using Solver 1)   =         .03
+

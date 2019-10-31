@@ -1,0 +1,142 @@
+
+**** 05/31/17 23:07:40 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dc_analysis"  [ c:\users\shane reynolds\documents\eng471_analogdevices\project\project_current_mirror-pspice
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dc_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../project_current_mirror-pspicefiles/project_current_mirror.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Shane Reynolds\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROJECT_CURRENT_MIRROR
+M_M2         N00148 N00148 N00152 N00152 Mbreakn           
+R_R         N00179 N00183  80k TC=0,0 
+V_VDD         N00183 0 10Vdc
+V_-VDD         N00152 0 -10Vdc
+M_M1         N00183 N00183 N00148 N00148 Mbreakn           
+M_M3         N00179 N00148 N00152 N00152 Mbreakn           
+
+**** RESUMING dc_analysis.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file "c:\users\shane reynolds\documents\eng471_analogdevices\project\project_current_mirror-pspicefiles\project_current_mirror.lib" has changed since index file project_current_mirror.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Wed May 31 23:06:57 2017 to Wed May 31 23:07:34 2017.
+
+INFO(ORPSIM-15422): Making new index file project_current_mirror.ind for library file project_current_mirror.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 05/31/17 23:07:40 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dc_analysis"  [ c:\users\shane reynolds\documents\eng471_analogdevices\project\project_current_mirror-pspice
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         
+               NMOS            
+       LEVEL    1            
+           L    5.000000E-06 
+           W  585.900000E-09 
+         VTO    2            
+          KP   40.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 05/31/17 23:07:40 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dc_analysis"  [ c:\users\shane reynolds\documents\eng471_analogdevices\project\project_current_mirror-pspice
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00148)    0.0000 (N00152)  -10.0000 (N00179)   -1.9992 (N00183)   10.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDD       -3.000E-04
+    V_-VDD       3.000E-04
+
+    TOTAL POWER DISSIPATION   6.00E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/31/17 23:07:40 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-dc_analysis"  [ c:\users\shane reynolds\documents\eng471_analogdevices\project\project_current_mirror-pspice
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

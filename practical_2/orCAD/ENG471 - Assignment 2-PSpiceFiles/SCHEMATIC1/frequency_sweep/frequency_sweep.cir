@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-frequency_sweep"  [ c:\users\shane reynolds\google drive\orcad\eng471 - assignment 2\eng471 - assignment 2-pspicefiles\schematic1\frequency_sweep.sim ] 
+
+** Creating circuit file "frequency_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../eng471 - assignment 2-pspicefiles/eng471 - assignment 2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Shane Reynolds\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 100 10 1e10
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

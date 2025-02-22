@@ -1,4 +1,4 @@
-<img src="https://fundraising.blackbaud.com.au/wp-content/uploads/2016/08/CDU-LOGO-RGB-LHS-1200x628.jpg" alt="Charles Darwin University - ENG720 Honours Thesis" width="200" />
+<img src="https://www.cdu.edu.au/images/cdu-logo-og.jpg" alt="Charles Darwin University - ENG471 Analogue Devices" width="200" />
 
 # ENG471 Analogue Devices
 The unit provides an understanding of design, construction, analysis and evaluation of analogue devices. It includes single state Integrated-Circuit Amplifiers, IC biasing, High frequency response of MOSFET and BJT amplifiers, Differential and multistage amplifiers, Amplifiers with active load, Feedback and Operational Amplifiers. The unit includes the critical evaluation of different design methods and integration of knowledge to practical applications.
